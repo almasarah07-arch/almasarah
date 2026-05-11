@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Alma Sarah</title>
+    <STyle>
+        /* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f3e5f5;
+    color: #4a148c;
+    line-height: 1.6;
+}
+
+/* Navigasi */
+nav {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e1bee7;
+}
+
+/* Section Umum */
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #ede7f6;
+}
+
+h1 {
+    margin-bottom: 30px;
+    border-bottom: 3px solid #6a1b9a;
+    display: inline-block;
+}
+
+/* Beranda */
+.content-beranda {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.text-box {
+    max-width: 600px;
+    text-align: left;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.text-box h2 {
+    margin-bottom: 15px;
+    color: #7b1fa2;
+}
+
+/* Profil & Pendidikan */
+.card, .edu-list {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.edu-list {
+    list-style: none;
+}
+
+.edu-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.edu-list li::before {
+    content: "💜";
+    position: absolute;
+    left: 0;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    border-radius: 10px;
+    transition: transform 0.3s;
+    border: 5px solid white;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #4a148c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 10px;
+    }
+    .content-beranda {
+        flex-direction: column;
+    }
+}
+
+    </STyle>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ALMA</div>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#pendidikan">Pendidikan</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="#image">Image</a></li>
+        </ul>
+    </nav>
+
+    <section id="beranda" class="section">
+        <h1>Beranda</h1>
+        <div class="content-beranda">
+            <img src="WhatsApp Image 2026-05-11 at 17.26.36 (1).jpeg" alt="Deskripsi" height="300px" width="300px">
+            <div class="text-box">
+                <h2>Tentang Menghargai Proses Diri Sendiri</h2>
+                <p>"Seringkali kita merasa tertinggal hanya karena melihat pencapaian orang lain yang tampak lebih cepat. Padahal, hidup bukanlah perlombaan lari antar manusia, melainkan perjalanan pribadi menuju versi terbaik diri sendiri. Ingatlah bahwa setiap bunga mekar di waktu yang berbeda. Jangan menghukum dirimu atas hal-hal yang belum berhasil kamu raih hari ini. Selama kamu masih melangkah—sekecil apa pun langkah itu—kamu tetap bergerak maju. Hargai setiap peluh dan air mata yang jatuh, karena itulah yang sedang membentuk mentalmu menjadi lebih baja."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="profil" class="section bg-light">
+        <h1>Profil</h1>
+        <div class="card">
+            <p><strong>Nama:</strong> ALMA SARAH</p>
+            <p><strong>Tempat Lahir:</strong> Pekanbaru</p>
+            <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+        </div>
+    </section>
+
+    <section id="pendidikan" class="section">
+        <h1>Pendidikan</h1>
+        <ul class="edu-list">
+            <li><strong>SDN 28 Tampunik</strong> (2011-2017)</li>
+            <li><strong>SMPN 4 Lubuk Alung</strong> (2017-2020)</li>
+            <li><strong>MAN 1 Padang Pariaman</strong> (2020-2023)</li>
+            <li><strong>AMIK-AKTAN Bukittinggi</strong> (2025-Sekarang)</li>
+        </ul>
+    </section>
+
+    <section id="kontak" class="section bg-light">
+        <h1>Kontak</h1>
+        <div class="kontak-links">
+            <p><a href="https://www.instagram.com/almasarah_.07?igsh=dGxqa2VmZGk1c2J1" target="_blank">Klik Link: Instagram</a></p>
+        </div>
+    </section>
+
+    <section id="image" class="section">
+        <h1>Galeri</h1>
+        <div class="gallery">
+            <img src="WhatsApp Image 2026-05-11 at 13.37.45 (2).jpeg" alt="Deskripsi" height="300px" width="300px">
+            <img src="WhatsApp Image 2026-05-11 at 13.37.46 (3).jpeg" alt="Deskripsi" height="300px" width="300px">
+            <img src="WhatsApp Image 2026-05-11 at 13.37.47 (8).jpeg" alt="Deskripsi" height="300px" width="300px">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alma Sarah. Dibuat dengan penuh semangat.</p>
+    </footer>
+
+</body>
+</html>
